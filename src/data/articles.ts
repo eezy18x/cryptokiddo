@@ -1,0 +1,60 @@
+import { Article } from "@/components/ArticleCard";
+
+export const articles: Article[] = [
+  {
+    id: "htb-pterodactyl",
+    title: "Pterodactyl HTB Writeup",
+    date: "2026-02-07",
+    category: "Writeups",
+    tags: ["HackTheBox", "HTB", "Privilege Escalation", "Linux"],
+    description: "Walkthrough of the Pterodactyl machine on HackTheBox covering initial foothold and privilege escalation.",
+  },
+  {
+    id: "htb-facts",
+    title: "Facts HTB Writeup",
+    date: "2026-02-01",
+    category: "Writeups",
+    tags: ["HackTheBox", "HTB", "Web"],
+    description: "Detailed writeup of the Facts challenge on HackTheBox.",
+  },
+  {
+    id: "azure-security",
+    title: "Azure Security",
+    date: "2026-01-18",
+    category: "Research",
+    tags: ["Azure", "Cloud Security"],
+    description: "Deep dive into Azure security configurations and common misconfigurations.",
+  },
+  {
+    id: "aws-security",
+    title: "AWS Security",
+    date: "2026-01-11",
+    category: "Research",
+    tags: ["AWS", "Cloud Security"],
+    description: "Comprehensive guide to AWS security best practices and penetration testing.",
+  },
+  {
+    id: "kerberos",
+    title: "Kerberos",
+    date: "2024-07-13",
+    category: "Writeups",
+    tags: ["Active Directory", "Kerberos"],
+    description: "Understanding Kerberos authentication and attack techniques.",
+  },
+  {
+    id: "hospital-htb",
+    title: "Hospital HTB Writeup",
+    date: "2023-11-20",
+    category: "Writeups",
+    tags: ["HackTheBox", "HTB"],
+    description: "Writeup for Hospital machine on HackTheBox.",
+  },
+  {
+    id: "msf-ctf",
+    title: "MSF CTF",
+    date: "2023-09-15",
+    category: "Writeups",
+    tags: ["CTF", "Metasploit"],
+    description: "Metasploit CTF challenge solutions and techniques.",
+  },
+];
