@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# Cryptokiddo
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Personal Cybersecurity Website  
+by **Suyog Jung Karki**
 
-## How can I edit this code?
+A digital hub documenting my journey in ethical hacking, security research, and hands-on learning.
 
-There are several ways of editing your application.
+</div>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Overview
 
-Changes made via Lovable will be committed automatically to this repo.
+Cryptokiddo is my personal cybersecurity website built as a portfolio and knowledge platform. It showcases my projects, research notes, blog posts, and practical experiments in offensive and defensive security.
 
-**Use your preferred IDE**
+This site exists to document growth, share knowledge, and build a strong professional presence in cybersecurity.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## What You’ll Find Here
 
-Follow these steps:
+- Cybersecurity blog articles
+- CTF write-ups and lab walkthroughs
+- Security experiments and research notes
+- Custom tools and scripts
+- Learning resources and documentation
+- Personal portfolio projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Frontend: HTML / CSS / JavaScript
+- Framework: Modern web stack (custom site)
+- Deployment: Vercel
+- Version Control: Git + GitHub
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Purpose
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+This website is built to:
 
-**Use GitHub Codespaces**
+- Track my cybersecurity progress
+- Demonstrate practical skills
+- Share educational content
+- Build a professional portfolio
+- Connect with the security community
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Author
 
-This project is built with:
+**Suyog Jung Karki**  
+Cybersecurity Student
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+GitHub: https://github.com/eezy18x  
+LinkedIn: https://www.linkedin.com/in/suyog-jung-karki-6497272ab/  
+Twitter/X: https://x.com/ix_sanz
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+<div align="center">
 
-## Can I connect a custom domain to my Lovable project?
+Built for learning, experimentation, and growth in cybersecurity.
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+</div>
