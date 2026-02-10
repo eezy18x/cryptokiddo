@@ -4,6 +4,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import SidebarBento from "@/components/SidebarBento";
 import FuzzyText from "@/components/FuzzyText";
 import { useArticles } from "@/hooks/useArticles";
+import { projects } from "@/data/projects";
 
 const About = () => {
   const { data: articles = [] } = useArticles();
@@ -11,13 +12,13 @@ const About = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
-      <section className="max-w-6xl mx-auto px-6 pt-24 pb-20 flex-1 w-full">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 pb-20 flex-1 w-full">
         <div className="flex flex-col lg:flex-row gap-12">
-          <aside className="bento-narrow w-full lg:w-[360px]">
+          <aside className="bento-narrow w-full lg:w-[360px] anim-in-top">
             <SidebarBento articles={articles} />
           </aside>
-          <div className="flex-1 min-w-0">
-            <div className="mb-8">
+          <div className="flex-1 min-w-0 anim-in-bottom">
+            <div className="mb-8 flex justify-center lg:justify-start">
               <FuzzyText
                 fontSize="clamp(2.4rem, 6vw, 3.6rem)"
                 fontWeight={800}
@@ -42,6 +43,40 @@ const About = () => {
                 red teaming, and cloud security. This site is where I share my writeups, research,
                 and notes from my journey in the infosec world.
               </p>
+              <div className="border border-border rounded p-6 bg-card">
+                <h2 className="font-heading text-xl font-bold text-foreground mb-4">Projects</h2>
+                <div className="space-y-4">
+                  {projects.map((project) => (
+                    <div key={project.name} className="flex flex-col gap-2">
+                      <div className="flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                          <div className="text-foreground font-semibold">{project.name}</div>
+                          <div className="text-xs text-muted-foreground">{project.tagline}</div>
+                        </div>
+                        <a
+                          href={project.repo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-xs px-2 py-1 rounded border border-border text-muted-foreground hover:text-primary hover:border-primary/50 transition-colors"
+                        >
+                          GitHub
+                        </a>
+                      </div>
+                      <p className="text-sm text-muted-foreground">{project.description}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.highlights.slice(0, 4).map((item) => (
+                          <span
+                            key={item}
+                            className="text-[10px] px-2 py-1 rounded bg-secondary text-accent"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
               <div className="border border-border rounded p-6 bg-card">
                 <h2 className="font-heading text-xl font-bold text-foreground mb-4">Interests</h2>
                 <div className="flex flex-wrap gap-2">

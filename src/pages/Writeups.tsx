@@ -12,12 +12,12 @@ const Writeups = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
-      <section className="max-w-6xl mx-auto px-6 pt-24 pb-20 flex-1 w-full">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pt-24 pb-20 flex-1 w-full">
         <div className="flex flex-col lg:flex-row gap-12">
-          <aside className="bento-narrow w-full lg:w-[360px]">
+          <aside className="bento-narrow w-full lg:w-[360px] anim-in-top">
             <SidebarBento articles={allArticles} />
           </aside>
-          <div className="flex-1 min-w-0">
+          <div className="flex-1 min-w-0 anim-in-bottom">
             {isLoading ? (
               <p className="text-muted-foreground">Loading...</p>
             ) : (

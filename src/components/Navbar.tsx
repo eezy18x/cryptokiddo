@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, Archive, FileText, User, Heart } from "lucide-react";
+import { Home, Archive, FileText, User, Heart, Code } from "lucide-react";
 
 const navItems = [
   { to: "/", label: "Home", icon: Home },
   { to: "/archives", label: "Archives", icon: Archive },
   { to: "/writeups", label: "Writeups", icon: FileText },
   { to: "/research", label: "Research", icon: User },
+  { to: "/projects", label: "Projects", icon: Code },
   { to: "/about", label: "About", icon: Heart },
 ];
 

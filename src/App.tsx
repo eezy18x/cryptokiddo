@@ -10,6 +10,7 @@ import Writeups from "./pages/Writeups";
 import Research from "./pages/Research";
 import About from "./pages/About";
 import ArticleDetail from "./pages/ArticleDetail";
+import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -48,8 +49,9 @@ const App = () => {
             <Route path="/" element={<Index />} />
             <Route path="/archives" element={<Archives />} />
             <Route path="/writeups" element={<Writeups />} />
-            <Route path="/research" element={<Research />} />
-            <Route path="/about" element={<About />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/about" element={<About />} />
             <Route path="/article/:slug" element={<ArticleDetail />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

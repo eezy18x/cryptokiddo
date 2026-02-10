@@ -142,9 +142,9 @@ const SidebarBento = ({ articles, showRecentPosts = true }: SidebarBentoProps) =
                 <Link
                   key={article.id}
                   to={`/article/${article.slug}`}
-                  className="group grid grid-cols-[64px,1fr] gap-3 items-center border-b border-border/60 pb-3 last:border-b-0 last:pb-0 hover:text-primary transition-colors"
+                  className="group grid grid-cols-[56px,1fr] sm:grid-cols-[64px,1fr] gap-3 items-center border-b border-border/60 pb-3 last:border-b-0 last:pb-0 hover:text-primary transition-colors"
                 >
-                  <div className="w-16 h-16 rounded-lg overflow-hidden border border-border bg-black/60 p-1">
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-lg overflow-hidden border border-border bg-black/60 p-1 anim-in-top">
                     {article.coverImageUrl ? (
                       <img
                         src={article.coverImageUrl}
@@ -160,7 +160,7 @@ const SidebarBento = ({ articles, showRecentPosts = true }: SidebarBentoProps) =
                     <div className="text-foreground truncate">{article.title}</div>
                     {article.tags && article.tags.length > 0 && (
                       <div className="mt-1 flex flex-wrap gap-1">
-                        {article.tags.slice(0, 4).map((tag) => (
+                        {article.tags.slice(0, 3).map((tag) => (
                           <span key={tag} className="text-[10px] px-1.5 py-0.5 bg-secondary text-accent rounded">
                             {tag}
                           </span>

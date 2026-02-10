@@ -347,7 +347,17 @@ const FuzzyText = ({
     letterSpacing,
   ]);
 
-  return <canvas ref={canvasRef} className={className} />;
+  return (
+    <canvas
+      ref={canvasRef}
+      className={className}
+      style={{
+        display: "block",
+        margin: 0,
+        maxWidth: "100%",
+      }}
+    />
+  );
 };
 
 export default FuzzyText;
