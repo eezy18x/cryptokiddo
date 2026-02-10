@@ -193,13 +193,13 @@ const Index = () => {
         </div>
       </section>
 
-      <div className="fixed right-4 bottom-24 z-50 flex flex-col items-end gap-2">
+      <div className="fixed right-2 bottom-20 sm:right-4 sm:bottom-24 z-50 flex flex-col items-end gap-2 max-w-[calc(100vw-16px)]">
         {menuOpen && (
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-row sm:flex-col gap-2">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
-              className="w-10 h-10 rounded-xl bg-secondary/80 border border-border text-foreground hover:text-primary hover:border-primary/50 transition-colors shadow-lg backdrop-blur"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-secondary/80 border border-border text-foreground hover:text-primary hover:border-primary/50 transition-colors shadow-lg backdrop-blur"
               aria-label="Open search"
               title="Search"
             >
@@ -208,7 +208,7 @@ const Index = () => {
             <button
               type="button"
               onClick={() => setFilter("writeups")}
-              className={`w-10 h-10 rounded-xl border border-border shadow-lg backdrop-blur transition-colors ${
+              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-border shadow-lg backdrop-blur transition-colors ${
                 filter === "writeups"
                   ? "bg-primary/20 text-primary border-primary/50"
                   : "bg-secondary/80 text-foreground hover:text-primary hover:border-primary/50"
@@ -221,7 +221,7 @@ const Index = () => {
             <button
               type="button"
               onClick={() => setFilter("research")}
-              className={`w-10 h-10 rounded-xl border border-border shadow-lg backdrop-blur transition-colors ${
+              className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl border border-border shadow-lg backdrop-blur transition-colors ${
                 filter === "research"
                   ? "bg-primary/20 text-primary border-primary/50"
                   : "bg-secondary/80 text-foreground hover:text-primary hover:border-primary/50"
@@ -234,7 +234,7 @@ const Index = () => {
             <button
               type="button"
               onClick={() => setLargeImages((prev) => !prev)}
-              className="w-10 h-10 rounded-xl bg-secondary/80 border border-border text-foreground hover:text-primary hover:border-primary/50 transition-colors shadow-lg backdrop-blur"
+              className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-secondary/80 border border-border text-foreground hover:text-primary hover:border-primary/50 transition-colors shadow-lg backdrop-blur"
               aria-label="Toggle post image size"
               title={`Image size: ${largeImages ? "Large" : "Small"}`}
             >
@@ -245,7 +245,7 @@ const Index = () => {
         <button
           type="button"
           onClick={() => setMenuOpen((prev) => !prev)}
-          className={`w-11 h-11 rounded-xl bg-transparent border border-transparent text-foreground hover:text-primary transition-colors ${
+          className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-transparent border border-transparent text-foreground hover:text-primary transition-colors ${
             menuOpen ? "text-primary" : ""
           }`}
           aria-label="Toggle quick actions"
